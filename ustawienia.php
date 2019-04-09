@@ -269,7 +269,7 @@ if (in_array('user',$uprawnienia)){
         <!-- KONIEC WYDZIAŁ  -->
     <?php
     }
-    if (in_array('admin',$uprawnienia) && in_array('realizator',$uprawnienia)){
+    if (in_array('admin',$uprawnienia) || in_array('realizator',$uprawnienia)){
         $k = new Kategoria($conn);
         $kategorie = $k->zwroc_wszystkie();
     ?>

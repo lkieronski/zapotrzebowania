@@ -3,8 +3,8 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$z_dbname= "zapotrzebowania";
-$a_dbname="Authentication";
+$z_dbname= "zapo";
+$a_dbname="auth";
 
 $conn = new mysqli($host, $username, $password, $z_dbname);
 

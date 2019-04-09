@@ -4,7 +4,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 CREATE TABLE `uzytkownicy` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nazwa` varchar(120) COLLATE utf8_polish_ci NOT NULL,
   `email` varchar(50) COLLATE utf8_polish_ci NOT NULL,
   `haslo` varchar(60) COLLATE utf8_polish_ci NOT NULL,
@@ -17,11 +17,14 @@ CREATE TABLE `uzytkownicy` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
+INSERT INTO `uzytkownicy` (`nazwa`, `email`, `haslo`, `imie`, `nazwisko`, `wydzial`, `uprawnienia`, `cookie_logkey`, `cookie_logkey_timeout`) VALUES
+('admin', 'admin', '$2y$10$re.lK.rhjpFcNphPwWRKjeh8cVAyVtzq0aoukiAD7GPNIuGdc4wje', 'admin', 'admin', 'admin', 'user;admin;', '', '');
+
 CREATE TABLE `wydzial` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nazwa` varchar(100) COLLATE utf8_polish_ci NOT NULL,
-  `kierownik` varchar(40) COLLATE utf8_polish_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
+INSERT INTO `wydzial` (`nazwa`) VALUES ('admin');
 COMMIT;
