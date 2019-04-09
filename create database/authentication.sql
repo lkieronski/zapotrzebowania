@@ -18,7 +18,7 @@ CREATE TABLE `uzytkownicy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 INSERT INTO `uzytkownicy` (`nazwa`, `email`, `haslo`, `imie`, `nazwisko`, `wydzial`, `uprawnienia`, `cookie_logkey`, `cookie_logkey_timeout`) VALUES
-('admin', 'admin', '$2y$10$re.lK.rhjpFcNphPwWRKjeh8cVAyVtzq0aoukiAD7GPNIuGdc4wje', 'admin', 'admin', 'admin', 'user;admin;', '', '');
+('admin', 'admin', '$2y$10$re.lK.rhjpFcNphPwWRKjeh8cVAyVtzq0aoukiAD7GPNIuGdc4wje', 'admin', 'admin', 'admin', 'user;admin', '', '');
 
 CREATE TABLE `wydzial` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
