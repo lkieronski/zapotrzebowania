@@ -11,6 +11,9 @@
 # /create database - contians SQL files to create bouth databases
 # next set the link to db in /config.php
 # 
+# aplication credentials
+# login: admin password:admin
+#
 # will provide more info as the project expands
 #
 #
