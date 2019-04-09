@@ -50,7 +50,7 @@ $(document).ready(function(){
             if (nazwaKategori){
                 $.ajax({
                     type:'POST',
-                    url:'test3ajax.php',
+                    url:'przelaczkategorie.php',
                     data:'nazwaKategori='+nazwaKategori,
                     success:function(html){
                         $('#produkt').html(html);
