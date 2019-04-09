@@ -19,13 +19,6 @@ CREATE TABLE `produkt` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
-CREATE TABLE `wydzial` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nazwa` varchar(100) COLLATE utf8_polish_ci NOT NULL,
-  `kierownik` varchar(40) COLLATE utf8_polish_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
-
 CREATE TABLE `zapotrzebowanie` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `zapotrzebowanie_nr` varchar(10) COLLATE utf8_polish_ci NOT NULL,
